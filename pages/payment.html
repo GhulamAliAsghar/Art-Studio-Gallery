@@ -106,7 +106,7 @@
         </nav>
     </div>
     <div class="container">
-        <div class="hero-sec row mt-5">
+        <div class="hero-sec row my-5">
             <div class="hero-left col-lg-8 col-sm-12">
                 <h1>
                     Choose a Payment Method!
@@ -115,7 +115,7 @@
                     Pay now to confirm your seat!
                 </h6>
                 <div class="card-1 d-flex border border-2 border-warning p-4 rounded-4 mt-5">
-                    <img src="/images/pngwing.com 1.png" alt="">
+                    <img src="/images/pngwing.com 1.png" alt="" class="card-logo">
                     <span class="mt-4 ps-5">
                         <h1>
                             Master Card
@@ -126,7 +126,7 @@
                     </span>
                 </div>
                 <div class="card-1 d-flex border border-2 border-secondary-subtle p-4 rounded-4 mt-5">
-                    <img src="/images/pngwing.com (1) 1.png" alt="">
+                    <img src="/images/pngwing.com (1) 1.png" alt="" class="card-logo">
                     <span class="mt-4 ps-5">
                         <h1>
                             Visa Card
@@ -136,11 +136,11 @@
                         </p>
                     </span>
                 </div>
-                <button type="button" class="btn btn-outline-secondary px-5 mt-4 w-25">Add new</button>
+                <button type="button" class="btn btn-outline-secondary px-5 mt-4">Add new</button>
             </div>
-            <div class="hero-right col-lg-4 col-sm-12 mt-lg-5">
-                <div>
-                    <div class="bg-black text-white text-center p-2 w-75 rounded-2">
+            <div class="hero-right col-lg-4 col-sm-12 mt-lg-5 position-relative">
+                <div class="ms-5">
+                    <div class="bg-black text-white text-center p-2 w-75 rounded-2 card-details position-relative">
                         <h6>Master Card</h6>
                         <p>
                             Card Type &nbsp;&nbsp;&nbsp;&nbsp;Master Card
@@ -152,13 +152,61 @@
                             Card Holder &nbsp;&nbsp;&nbsp;&nbsp;Zara Noor
                         </p>
                     </div>
-                    <div>
-                        
+                    <div class="text-center pay-details rounded-3 pt-5">
+                        <h5 class="mt-5 fw-bold">
+                            Subtotal
+                        </h5>
+                        <p class="border-bottom border-black fs-3 pb-3">
+                            PKR 15,500
+                        </p>
+                        <p class="py-2">
+                            Ticket Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PKR 15,500
+                        </p>
+                        <p class="py-2">
+                            Taxes
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                            380
+                        </p>
+                        <p class="py-2">
+                            Early Discount &nbsp;&nbsp;&nbsp;&nbsp;-PKR 380
+                        </p>
+
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Pay Now
+                        </button>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="">
+        <div class="text-center position-relative footer border-bottom border-warning border-5">
+            <img src="/images/Frame 427318964.png" alt="">
+            <h3 class="fw-bold mt-4">
+                Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.
+            </h3>
+            <span>
+                <input type="text" placeholder="Enter Email Address"
+                    class="py-2 px-3 border border-warning rounded-1 white text-white footer-input w-25">
+                <button type="button" class="btn btn-warning py-2 px-4 fs-6 footer-btn fw-bold">Try Know</button>
+            </span>
+            <img src="/images/Frame 427318963.png" alt="" class="position-absolute animated-img-white">
+            <img src="/images/Frame 427318963 (1).png" alt="" class="position-absolute animated-img-black">
+            <div>
+                <ul class="list-unstyled d-lg-flex justify-content-center mt-5 gap-4">
+                    <li>Home </li>
+                    <li>Exhibitions</li>
+                    <li>Services</li>
+                    <li>Artists</li>
+                    <li>Gallery</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

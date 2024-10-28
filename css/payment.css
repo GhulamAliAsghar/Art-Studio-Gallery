@@ -5,3 +5,127 @@
 nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
 }
+
+.pay-details {
+    height: 450px;
+    width: 300px;
+    background-color: #EBECF1;
+    padding-top: 50px;
+}
+
+.card-details {
+    top: 75px;
+    left: 35px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.footer-btn {
+    width: 150px;
+}
+
+.animated-img-black {
+    right: 80px;
+    bottom: 60px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-black {
+        animation: animated-img-black-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-black-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animated-img-white {
+    right: 80px;
+    bottom: 60px;
+    display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-white {
+        animation: animated-img-white-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-white-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: block;
+    }
+
+    .footer-input {
+        background-color: black;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+}
+
+@media (max-width:576px) {
+    .pay-details {
+        margin-left: -10px;
+    }
+
+    .card-logo {
+        height: 150px;
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: none;
+    }
+
+    .footer:hover {
+        .animated-img-black {
+            display: none;
+        }
+
+        .animated-img-white {
+            display: none;
+        }
+    }
+
+    .card-details {
+        left: 23px;
+    }
+}
