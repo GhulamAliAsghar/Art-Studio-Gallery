@@ -1,0 +1,7 @@
+.search-bar {
+    border-image: linear-gradient(to right, #ffce20, #d3c26f) 1 !important;
+}
+
+nav .Li-Items:hover {
+    color: hsl(47, 100%, 50%);
+}
