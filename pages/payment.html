@@ -33,7 +33,7 @@
 
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse ms-lg-5" id="navbarSupportedContent">
 
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-2">
 
@@ -87,18 +87,6 @@
 
 
 
-
-
-                    <div>
-
-                        <input type="search" class="text-center border-2 rounded-2 py-1 search-bar"
-                            placeholder="Search Work">
-
-                    </div>
-
-
-
-
                 </div>
 
             </div>
@@ -107,30 +95,30 @@
     </div>
     <div class="container">
         <div class="hero-sec row my-5">
-            <div class="hero-left col-lg-8 col-sm-12">
+            <div class="hero-left col-lg-8 col-sm-12 mt-5">
                 <h1>
                     Choose a Payment Method!
                 </h1>
                 <h6>
                     Pay now to confirm your seat!
                 </h6>
-                <div class="card-1 d-flex border border-2 border-warning p-4 rounded-4 mt-5">
-                    <img src="/images/pngwing.com 1.png" alt="" class="card-logo">
-                    <span class="mt-4 ps-5">
+                <div class="card-1 d-flex border border-2 border-warning rounded-4 mt-5">
+                    <img src="/images/pngwing.com 1.png" alt="" class="card-logo h-50 m-3">
+                    <span class="mt-4 ps-lg-4">
                         <h1>
                             Master Card
-                        </h1><br>
+                        </h1>
                         <p>
                             Valid till:30 Oct,2030
                         </p>
                     </span>
                 </div>
-                <div class="card-1 d-flex border border-2 border-secondary-subtle p-4 rounded-4 mt-5">
-                    <img src="/images/pngwing.com (1) 1.png" alt="" class="card-logo">
-                    <span class="mt-4 ps-5">
+                <div class="card-1 d-flex border border-2 border-secondary-subtle  rounded-4 mt-3">
+                    <img src="/images/pngwing.com (1) 1.png" alt="" class="card-logo h-50 m-3">
+                    <span class="mt-4 ps-lg-4">
                         <h1>
                             Visa Card
-                        </h1><br>
+                        </h1>
                         <p>
                             Valid till:30 sep,2029
                         </p>
@@ -138,7 +126,7 @@
                 </div>
                 <button type="button" class="btn btn-outline-secondary px-5 mt-4">Add new</button>
             </div>
-            <div class="hero-right col-lg-4 col-sm-12 mt-lg-5 position-relative">
+            <div class="hero-right col-lg-4 col-sm-12 mt-lg-2 position-relative">
                 <div class="ms-5">
                     <div class="bg-black text-white text-center p-2 w-75 rounded-2 card-details position-relative">
                         <h6>Master Card</h6>
@@ -171,11 +159,20 @@
                             Early Discount &nbsp;&nbsp;&nbsp;&nbsp;-PKR 380
                         </p>
 
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-dark" id="openModal">
                             Pay Now
                         </button>
-
+                    </div>
+                </div>
+            </div>
+            <div class="modal-bg" id="modal">
+                <div class="modal-content bg-white text-center w-50  rounded-2" id="myModal">
+                    <h5 class="text-black">
+                        You have successfully registerd for the Art Counsel Exhibition!
+                    </h5>
+                    <div class="d-flex mx-5 gap-5 my-4 btns">
+                        <button class="btn btn-outline-secondary px-5" id="close">Go back</button>
+                        <button class="btn btn-dark px-4" id="close">Downlod Ticket</button>
                     </div>
                 </div>
             </div>
@@ -187,11 +184,6 @@
             <h3 class="fw-bold mt-4">
                 Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.
             </h3>
-            <span>
-                <input type="text" placeholder="Enter Email Address"
-                    class="py-2 px-3 border border-warning rounded-1 white text-white footer-input w-25">
-                <button type="button" class="btn btn-warning py-2 px-4 fs-6 footer-btn fw-bold">Try Know</button>
-            </span>
             <img src="/images/Frame 427318963.png" alt="" class="position-absolute animated-img-white">
             <img src="/images/Frame 427318963 (1).png" alt="" class="position-absolute animated-img-black">
             <div>
@@ -207,6 +199,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/scripts/payment.js"></script>
 </body>
 
 </html>
