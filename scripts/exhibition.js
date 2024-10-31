@@ -3,7 +3,7 @@
 const images = [
   "/images/Exhibitions.png",
   "/images/2.jpg",
-  "/imges/3.jpg",
+  "/images/3.jpg",
   "/images/4.png",
   "/images/5.png", // Add path to additional images here
   // Add other image paths in the array like "image2.jpg", "image3.jpg", etc.
