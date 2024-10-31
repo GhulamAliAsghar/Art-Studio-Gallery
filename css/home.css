@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 @font-face {
     font-family: "Gerbil";
     src: url('/font/gerbil.otf');
@@ -60,12 +59,10 @@ nav .Li-Items:hover {
     opacity: 1;
 }
 
-
 .btn-hover:hover {
    color: #ffce20 !important;
    background-color: #232323 !important;
 }
-
 
 h1 {
     font-size: 2.5rem;
@@ -95,7 +92,6 @@ h1 {
 
 }
 
-
 @keyframes slide {
 
     0%,
@@ -114,7 +110,6 @@ h1 {
         opacity: 0;
     }
 }
-
 
 /* Background zoom and color change on hover */
 .hover-effect:hover {
@@ -139,8 +134,6 @@ h1 {
     color: #FFD700;
 }
 
-
-
 #animated-text {
     opacity: 1;
     transition: opacity 1s ease;
@@ -154,24 +147,16 @@ h1 {
     opacity: 0;
 }
 
-
-
-
 /* art-hiden */
 .hidden-art {
     display: none;
 }
-
 
 @media (max-width: 768px) {
     .hidden-art {
         display: flex;
     }
 }
-
-
-
-
 
 /* services */
 .service-box {
@@ -192,7 +177,6 @@ h1 {
 
 }
 
-
 @media (max-width: 768px) {
     .srv-img {
         width: 100%;
@@ -203,9 +187,6 @@ h1 {
         height: 90%;
     }
 }
-
-
-
 
 /* card color */
 
@@ -228,7 +209,6 @@ h1 {
 .card-color {
     color: #ff6300;
 }
-
 
 /* CSS of the footer */
 
@@ -334,3 +314,4 @@ input:focus {
         width: 390px;
     }
 }
+
