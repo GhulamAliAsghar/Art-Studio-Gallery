@@ -15,8 +15,12 @@
     font-size: 14px;
 }
 
-h1 {
+.font-gerbil {
     font-family: "Gerbil", sans-serif;
+}
+
+.font-mnt{
+    font-family: "Roboto", serif;
 }
 
 .header-and-hero-section {
@@ -24,10 +28,6 @@ h1 {
     background-color: rgb(0, 0, 0, 0.1);
     width: 100%;
     height: 800px;
-}
-
-.search-bar {
-    border-image: linear-gradient(to right, #ffce20, #d3c26f) 1 !important;
 }
 
 nav .Li-Items:hover {
@@ -38,8 +38,6 @@ nav .Li-Items:hover {
     cursor: pointer;
     border-color: #ffc107 !important;
 }
-
-
 
 .img-2 {
     margin-top: 115px;
@@ -55,8 +53,9 @@ input:focus {
     outline: none;
 }
 
-.footer-btn {
-    width: 150px;
+.logo-center {
+    top: 120px;
+    right: 120px;
 }
 
 .animated-img-black {
@@ -155,6 +154,10 @@ input:focus {
 
     .card-btn {
         margin: 10px;
+    }
+
+    .logo-center{
+        display: none;
     }
 
     .animated-img-black {

@@ -15,6 +15,121 @@
     font-size: 14px;
 }
 
+h1 {
+    font-family: "Gerbil", sans-serif;
+}
+
 nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
+}
+
+.header-and-hero-section {
+    background-image: url(/images/Hero\ bg.png);
+    width: 100%;
+    height: 800px;
+}
+
+.logo-center {
+    top: 120px;
+    right: 120px;
+}
+
+.animated-img-black {
+    right: 80px;
+    bottom: 60px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-black {
+        animation: animated-img-black-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-black-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animated-img-white {
+    right: 80px;
+    bottom: 60px;
+    display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-white {
+        animation: animated-img-white-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-white-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: block;
+    }
+
+    .footer-input {
+        background-color: black;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+}
+
+@media (max-width:576px) {
+    .header-and-hero-section {
+        background-image: url(/images/Hero\ bg.png);
+        width: 100%;
+        height: 850px;
+    }
+
+    .logo-center{
+        display: none;
+    }
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: none;
+    }
+
+    .footer:hover {
+        .animated-img-black {
+            display: none;
+        }
+
+        .animated-img-white {
+            display: none;
+        }
+    }
+
 }

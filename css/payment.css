@@ -3,17 +3,29 @@
     src: url('/font/gerbil.otf');
 }
 
-.nav-items{
+.nav-item{
     font-family: "Gerbil", sans-serif;
-    font-size: 14px;
 }
 
 nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
 }
 
+.font-gerbil {
+    font-family: "Gerbil", sans-serif;
+}
+
+.font-mnt{
+    font-family: "Roboto", serif;
+}
+
 .add-pay-btn:hover{
     color: white;
+}
+
+.card-1:hover{
+    cursor: pointer;
+    border-color: #ffc107 !important;
 }
 
 .pay-details {
@@ -61,6 +73,11 @@ input:focus {
 
 .close-btn:hover {
     cursor: pointer;
+}
+
+.logo-center {
+    top: 120px;
+    right: 120px;
 }
 
 .animated-img-black {
@@ -142,6 +159,10 @@ input:focus {
         height: 150px;
         width: 150px;
         margin-top: 15px;
+    }
+
+    .logo-center{
+        display: none;
     }
 
     .animated-img-black {
