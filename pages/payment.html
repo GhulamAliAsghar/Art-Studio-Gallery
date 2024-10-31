@@ -33,7 +33,7 @@
 
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse ms-lg-5" id="navbarSupportedContent">
 
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-2">
 
@@ -51,7 +51,7 @@
 
                         <li class="nav-item">
 
-                            <a class="nav-link Li-Items fs-5" href="/payment.html">Services</a>
+                            <a class="nav-link Li-Items fs-5" href="/pages/booking.html">Booking</a>
 
                         </li>
 
@@ -87,18 +87,6 @@
 
 
 
-
-
-                    <div>
-
-                        <input type="search" class="text-center border-2 rounded-2 py-1 search-bar"
-                            placeholder="Search Work">
-
-                    </div>
-
-
-
-
                 </div>
 
             </div>
@@ -106,41 +94,42 @@
         </nav>
     </div>
     <div class="container">
-        <div class="hero-sec row mt-5">
-            <div class="hero-left col-lg-8 col-sm-12">
+        <div class="hero-sec row my-5">
+            <div class="hero-left col-lg-8 col-sm-12 mt-5">
                 <h1>
                     Choose a Payment Method!
                 </h1>
                 <h6>
                     Pay now to confirm your seat!
                 </h6>
-                <div class="card-1 d-flex border border-2 border-warning p-4 rounded-4 mt-5">
-                    <img src="/images/pngwing.com 1.png" alt="">
-                    <span class="mt-4 ps-5">
+                <div class="card-1 d-flex border border-2 border-warning rounded-4 mt-5">
+                    <img src="/images/pngwing.com 1.png" alt="" class="card-logo h-50 m-3">
+                    <span class="mt-4 ps-lg-4">
                         <h1>
                             Master Card
-                        </h1><br>
+                        </h1>
                         <p>
                             Valid till:30 Oct,2030
                         </p>
                     </span>
                 </div>
-                <div class="card-1 d-flex border border-2 border-secondary-subtle p-4 rounded-4 mt-5">
-                    <img src="/images/pngwing.com (1) 1.png" alt="">
-                    <span class="mt-4 ps-5">
+                <div class="card-1 d-flex border border-2 border-secondary-subtle  rounded-4 mt-3">
+                    <img src="/images/pngwing.com (1) 1.png" alt="" class="card-logo h-50 m-3">
+                    <span class="mt-4 ps-lg-4">
                         <h1>
                             Visa Card
-                        </h1><br>
+                        </h1>
                         <p>
                             Valid till:30 sep,2029
                         </p>
                     </span>
                 </div>
-                <button type="button" class="btn btn-outline-secondary px-5 mt-4 w-25">Add new</button>
+                <a href="/pages/add-payment.html"><button type="button" class="btn btn-outline-secondary px-5 mt-4">Add
+                        new</button></a>
             </div>
-            <div class="hero-right col-lg-4 col-sm-12 mt-lg-5">
-                <div>
-                    <div class="bg-black text-white text-center p-2 w-75 rounded-2">
+            <div class="hero-right col-lg-4 col-sm-12 mt-lg-2 position-relative">
+                <div class="ms-5">
+                    <div class="bg-black text-white text-center p-2 w-75 rounded-2 card-details position-relative">
                         <h6>Master Card</h6>
                         <p>
                             Card Type &nbsp;&nbsp;&nbsp;&nbsp;Master Card
@@ -152,13 +141,67 @@
                             Card Holder &nbsp;&nbsp;&nbsp;&nbsp;Zara Noor
                         </p>
                     </div>
-                    <div>
-                        
+                    <div class="text-center pay-details rounded-3 pt-5">
+                        <h5 class="mt-5 fw-bold">
+                            Subtotal
+                        </h5>
+                        <p class="border-bottom border-black fs-3 pb-3">
+                            PKR 15,500
+                        </p>
+                        <p class="py-2">
+                            Ticket Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PKR 15,500
+                        </p>
+                        <p class="py-2">
+                            Taxes
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PKR
+                            380
+                        </p>
+                        <p class="py-2">
+                            Early Discount &nbsp;&nbsp;&nbsp;&nbsp;-PKR 380
+                        </p>
+
+                        <button type="button" class="btn btn-dark" id="openModal">
+                            Pay Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-bg" id="modal">
+                <div class="modal-content bg-white text-center w-50  rounded-2" id="myModal">
+                    <h5 class="text-black">
+                        You have successfully registerd for the Art Counsel Exhibition!
+                    </h5>
+                    <div class="d-flex mx-5 gap-5 my-4 btns">
+                        <button class="btn btn-outline-secondary px-5" id="close">Go back</button>
+                       <a href="/pages/booking-details.html"> <button class="btn btn-dark px-4" id="close">Downlod Ticket</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="">
+        <div class="text-center position-relative footer border-bottom border-warning border-5">
+            <img src="/images/Frame 427318964.png" alt="">
+            <h3 class="fw-bold mt-4">
+                Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry.
+            </h3>
+            <img src="/images/Frame 427318963.png" alt="" class="position-absolute animated-img-white">
+            <img src="/images/Frame 427318963 (1).png" alt="" class="position-absolute animated-img-black">
+            <div>
+                <ul class="list-unstyled d-lg-flex justify-content-center mt-5 gap-4">
+                    <li>Home </li>
+                    <li>Exhibitions</li>
+                    <li>Services</li>
+                    <li>Artists</li>
+                    <li>Gallery</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/payment.js"></script>
 </body>
 
 </html>
