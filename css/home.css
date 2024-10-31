@@ -61,6 +61,11 @@ nav .Li-Items:hover {
 }
 
 
+.btn-hover:hover {
+   color: #ffce20 !important;
+   background-color: #232323 !important;
+}
+
 
 h1 {
     font-size: 2.5rem;
@@ -214,7 +219,7 @@ h1 {
 
 @media (max-width : 1280px) {
     .location-bg {
-        padding-top: 54.30%;  
+        padding-top: 54.30%;
         padding-bottom: 30%;
     }
 
