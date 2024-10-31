@@ -19,7 +19,7 @@ nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
 }
 
-h3 {
+.font-gerbil {
     font-family: "Gerbil", sans-serif;
 }
 
@@ -39,11 +39,15 @@ input:focus {
     left: 500px;
 }
 
+.logo-center {
+    top: 120px;
+    right: 120px;
+}
+
 
 .animated-img-black {
     right: 80px;
     bottom: 60px;
-
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -128,6 +132,10 @@ input:focus {
         height: 150px;
         width: 150px;
         margin-top: 15px;
+    }
+
+    .logo-center{
+        display: none;
     }
 
     .animated-img-black {
