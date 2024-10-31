@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+    font-family: "Gerbil";
+    src: url('/font/gerbil.otf');
+}
+
+body {
+    font-family: "Gerbil", sans-serif;
+}
+
+h1 {
+    font-family: "Gerbil", sans-serif;
+}
+
+.text {
+    font-family: "Gerbil", sans-serif;
+}
+
+* {
+
+    font-family: "Montserrat";
+}
+
+.search-bar {
+    border-image: linear-gradient(to right, #ffce20, #d3c26f) 1 !important;
+}
+
+.bg-Color {
+    background-color: #232323;
+}
+
+nav .Li-Items:hover {
+    color: hsl(47, 100%, 50%);
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider-img.active {
+    opacity: 1;
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+
+    .lead {
+        font-size: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+        .col-lg-6 {
+            text-align: center;
+        }
+
+        .image-slider {
+            max-width: 100%;
+        }
+    }
+}
+
+#animated-text {
+    display: inline-block;
+    animation: slide 1.5s infinite;
+}
+
+#animated-text {
+    color: #f4c542;
+
+}
+
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    33% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    66% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+
+/* Background zoom and color change on hover */
+.hover-effect:hover {
+    background-color: #232323;
+    transform: scale(1.0);
+}
+
+.hover-effect:hover .card-title {
+    color: #FFD700;
+}
+
+.image {
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover .image {
+    transform: translateY(10px);
+}
+
+.card-title {
+    color: #FFD700;
+}
+
+
+
+#animated-text {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
+
+
+/* art-hiden */
+.hidden-art{
+    display: none;
+}
+
+
+@media (max-width: 768px ) {
+    .hidden-art{
+        display: flex;
+    }
+}
+
+
+
+/* services */
+.service-box {
+    color: #f4c542;
+}
+
+.service-box:hover .service-title {
+    color: #232323;
+}
+
+.service-box {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-box:hover {
+    background-color: white;
+    color: #232323;
+
+}
+
+
+@media (max-width: 768px) {
+    .srv-img {
+        width: 100%;
+    }
+
+    .srv-img-2 {
+        width: 85%;
+        height: 90%;
+    }
+}
+
+
+
+
+/* card color */
+
+.card-color {
+    color: #ff6300;
+}
+
+
+
+
+
+
+/* CSS of the footer */
+
+input:focus {
+    outline: none;
+}
+
+.footer-btn {
+    width: 150px;
+}
+
+.animated-img-black {
+    right: 80px;
+    bottom: 60px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-black {
+        animation: animated-img-black-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-black-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animated-img-white {
+    right: 80px;
+    bottom: 60px;
+    display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-white {
+        animation: animated-img-white-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-white-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: block;
+    }
+
+    .footer-input {
+        background-color: black;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+}
+
+@media (max-width:576px) {
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: none;
+    }
+
+    .footer:hover {
+        .animated-img-black {
+            display: none;
+        }
+
+        .animated-img-white {
+            display: none;
+        }
+    }
+
+    .booking-left {
+        margin-top: 50px;
+        width: 390px;
+    }
+}
