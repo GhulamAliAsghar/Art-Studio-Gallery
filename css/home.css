@@ -153,16 +153,18 @@ h1 {
 
 
 /* art-hiden */
-.hidden-art{
+.hidden-art {
     display: none;
 }
 
 
-@media (max-width: 768px ) {
-    .hidden-art{
+@media (max-width: 768px) {
+    .hidden-art {
         display: flex;
     }
 }
+
+
 
 
 
@@ -202,13 +204,25 @@ h1 {
 
 /* card color */
 
+.location-bg {
+    padding-top: 40%;
+    padding-bottom: 20%;
+    background-image: url('/images/map-bg-card.png');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width : 1280px) {
+    .location-bg {
+        padding-top: 54.30%;  
+        padding-bottom: 30%;
+    }
+
+}
+
 .card-color {
     color: #ff6300;
 }
-
-
-
-
 
 
 /* CSS of the footer */
