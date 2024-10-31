@@ -34,6 +34,12 @@ nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
 }
 
+.card-:hover{
+    cursor: pointer;
+    border-color: #ffc107 !important;
+}
+
+
 
 .img-2 {
     margin-top: 115px;

@@ -1,9 +1,19 @@
-.search-bar {
-    border-image: linear-gradient(to right, #ffce20, #d3c26f) 1 !important;
+@font-face {
+    font-family: "Gerbil";
+    src: url('/font/gerbil.otf');
+}
+
+.nav-items{
+    font-family: "Gerbil", sans-serif;
+    font-size: 14px;
 }
 
 nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
+}
+
+.add-pay-btn:hover{
+    color: white;
 }
 
 .pay-details {
@@ -51,10 +61,6 @@ input:focus {
 
 .close-btn:hover {
     cursor: pointer;
-}
-
-.footer-btn {
-    width: 150px;
 }
 
 .animated-img-black {

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Gerbil";
+    src: url('/font/gerbil.otf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item {
+    font-family: "Gerbil", sans-serif;
+    font-size: 14px;
+}
+
+nav .Li-Items:hover {
+    color: hsl(47, 100%, 50%);
+}
+
+h3 {
+    font-family: "Gerbil", sans-serif;
+}
+
+.left-inputs {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card-pic{
+    left: 800px;
+}
+
+.right-inputs{
+    left: 500px;
+}
+
+
+.animated-img-black {
+    right: 80px;
+    bottom: 60px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-black {
+        animation: animated-img-black-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-black-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animated-img-white {
+    right: 80px;
+    bottom: 60px;
+    display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animated-img-white {
+        animation: animated-img-white-spin infinite 20s linear;
+    }
+}
+
+@keyframes animated-img-white-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: block;
+    }
+
+    .footer-input {
+        background-color: black;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .hero-right{
+        display: none;
+    }
+
+    .left-inputs{
+        display: block;
+    }
+
+    .pay-details {
+        margin-left: -10px;
+    }
+
+    .card-logo {
+        height: 150px;
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    .animated-img-black {
+        display: none;
+    }
+
+    .animated-img-white {
+        display: none;
+    }
+
+    .footer:hover {
+        .animated-img-black {
+            display: none;
+        }
+
+        .animated-img-white {
+            display: none;
+        }
+    }
+
+    .card-details {
+        left: 23px;
+    }
+}
