@@ -17,6 +17,10 @@ h1 {
     font-family: "Gerbil", sans-serif;
 }
 
+.font-gerbil {
+    font-family: "Gerbil", sans-serif;
+}
+
 * {
 
     font-family: "Montserrat";
@@ -294,7 +298,7 @@ input:focus {
 @media (max-width:576px) {
 
     .logo-center{
-        dispaly: none;
+        display: none;
     }
     
     .animated-img-black {
