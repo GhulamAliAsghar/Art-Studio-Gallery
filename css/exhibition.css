@@ -330,6 +330,11 @@ input:focus {
   width: 150px;
 }
 
+.logo-center {
+    top: 120px;
+    right: 120px;
+}
+
 .animated-img-black {
   right: 80px;
   bottom: 60px;
