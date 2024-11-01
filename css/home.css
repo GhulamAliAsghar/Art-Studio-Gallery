@@ -292,6 +292,11 @@ input:focus {
 }
 
 @media (max-width:576px) {
+
+    .logo-center{
+        dispaly: none;
+    }
+    
     .animated-img-black {
         display: none;
     }
