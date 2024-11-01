@@ -151,6 +151,18 @@ input:focus {
 }
 
 @media (max-width:576px) {
+
+     .modal-content {
+        height: 300px;
+        margin-top: 210px;
+        margin-left: 95px;
+        padding: 40px 0px 100px 0px;
+    }
+
+    .btns {
+        padding-left: 0px;
+    }
+    
     .pay-details {
         margin-left: -10px;
     }
