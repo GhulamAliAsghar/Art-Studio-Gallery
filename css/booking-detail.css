@@ -20,6 +20,10 @@ h1 {
     font-family: "Gerbil", sans-serif;
 }
 
+.font-gerbil{
+    font-family: "Gerbil", sans-serif;
+}
+
 nav .Li-Items:hover {
     color: hsl(47, 100%, 50%);
 }
