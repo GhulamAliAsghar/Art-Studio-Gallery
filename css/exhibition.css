@@ -1,11 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+@font-face {
+  font-family: "Gerbil";
+  src: url('/font/gerbil.otf');
+}
+
+.font-gerbil{
+  font-family: "Gerbil" , sans-serif;
 }
 
 nav .Li-Items {
   color: black;
+  font-family: "Gerbil" , sans-serif;
 }
 
 nav .Li-Items:hover {
@@ -45,11 +58,13 @@ nav .Li-Items:hover {
 
 /* Keyframes for text animations */
 @keyframes fadeInOut {
+
   0%,
   100% {
     opacity: 0;
     transform: translateY(10px);
   }
+
   50% {
     opacity: 1;
     transform: translateY(0);
@@ -66,11 +81,13 @@ nav .Li-Items:hover {
 
 /* Keyframes for image animations */
 @keyframes slideIn {
+
   0%,
   100% {
     opacity: 0;
     transform: translateX(20px);
   }
+
   50% {
     opacity: 1;
     transform: translateX(0);
@@ -142,6 +159,7 @@ nav .Li-Items:hover {
   margin-bottom: 30px;
   gap: 30px;
 }
+
 .cards-containe {
   display: flex;
   flex-wrap: wrap;
@@ -150,8 +168,7 @@ nav .Li-Items:hover {
 
 .card {
   background-color: #fff;
-  width: calc(29.312% - 9px);
-
+  width: calc(32.312% - 9px);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -182,6 +199,7 @@ nav .Li-Items:hover {
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
 }
+
 .card-content .span {
   margin-right: 20%;
   font-family: "Montserrat", sans-serif;
@@ -193,7 +211,7 @@ nav .Li-Items:hover {
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
-  margin-left: 30%;
+  margin-left: 35%;
   cursor: pointer;
   transition: background-color 0.2s ease;
   font-family: "Montserrat", sans-serif;
@@ -204,11 +222,11 @@ nav .Li-Items:hover {
 }
 
 .view-more {
-  margin: 20px 0px 0px 80%;
+  margin: 20px;
   display: block;
   background-color: #fcf1f1;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -240,6 +258,7 @@ nav .Li-Items:hover {
   padding: 60px 0;
   text-align: left;
 }
+
 /* Title styling */
 .highlights-section h2 {
   font-size: 2em;
@@ -247,46 +266,53 @@ nav .Li-Items:hover {
   font-weight: 700;
   font-family: "gerbil", sans-serif;
 }
+
 .highlights-section p {
   font-size: 1.1em;
   color: #555;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
 }
+
 /* Image card styling */
 .highlight-card {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .highlight-cardi {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 110%;
 }
+
 .highlight-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 .highlight-cardi img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.2s ease;
 }
+
 .highlight-card:hover img {
   transform: scale(1.08);
 }
+
 .highlight-cardi:hover img {
   transform: scale(1.08);
 }
 
 /* View More button styling */
 .view-more-btn {
-  margin: 34px 0px 0px 45%;
+  /*margin: 34px 0px 0px 45%;*/
   font-weight: 500;
   padding: 15px 20px;
 }
@@ -295,6 +321,7 @@ nav .Li-Items:hover {
 input:focus {
   outline: none;
 }
+
 .footer h3 {
   font-family: "Montserrat", sans-serif;
 }
@@ -372,6 +399,15 @@ input:focus {
 }
 
 @media (max-width: 576px) {
+
+  .highlight-cardi {
+    margin-top: 15px;
+  }
+
+  .logo-center{
+    display: none;
+  }
+
   .animated-img-black {
     display: none;
   }
