@@ -187,3 +187,29 @@ input:focus {
         left: 23px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero-right{
+        margin-left: 10px;
+    }
+
+    .pay-details{
+        width: 560px;
+    }
+    .logo-center {
+        top: 285px;
+        right: 115px;
+        width: 130px;
+    }
+
+    .animated-img-black {
+        height: 200px;
+        top: 200px;
+    }
+
+    .animated-img-white {
+        height: 200px;
+        top: 200px;
+    }
+}
